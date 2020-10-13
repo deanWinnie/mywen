@@ -11,7 +11,7 @@ export default {
     name: 'app',
     mounted() {
         console.log(storage.getItem('username', 'user'));
-        storage.clear('sex', 'user');
+
     }
 }
 </script>
