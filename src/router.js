@@ -1,5 +1,5 @@
-import * as Vue from 'vue'
-import * as Router from 'vue-router'
+import Vue from 'vue'
+import Router from 'vue-router'
 import NanNing from './pages/nanNing'
 import NingXia from './pages/ningXia'
 import WeiZhouDao from './pages/weiZhouDao'
@@ -8,10 +8,9 @@ import TogetherDate from './pages/togetherDate'
 import Index from './pages/index'
 import Picture from './pages/picture'
 
-
 Vue.use(Router);
 export default new Router({
-    routers:[
+    routes:[   //这里的属性是routes不是routers千万不能写错
         {
             path:'/',
             name:'home',
@@ -27,7 +26,7 @@ export default new Router({
                     name:'togetherDate',
                     component:TogetherDate
                 },{
-                    path:'/picture:id',
+                    path:'/picture/:id',
                     name:'picture',
                     component:Picture
                 }
@@ -45,7 +44,5 @@ export default new Router({
             name:'weiZhouDao',
             component:WeiZhouDao
         }
-
     ]
-
 });
