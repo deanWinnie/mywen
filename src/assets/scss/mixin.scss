@@ -1,0 +1,8 @@
+/*背景图片样式的复用*/
+@mixin bgImg($w,$h,$img,$size:contain){
+    display: inline-block;
+    width: $w;
+    height: $h;
+    background: url($img) no-repeat center;
+    background-size: $size;
+}
